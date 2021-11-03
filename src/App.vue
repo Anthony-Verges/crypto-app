@@ -1,18 +1,11 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/bitcoins">Bitcoins</router-link> |
+    <router-link to="/ethereum">Ethereum</router-link>
+  </div>
+  <router-view />
 </template>
-
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
-
-export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-};
-</script>
 
 <style>
 #app {
@@ -21,6 +14,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #ff8500;
+  text-decoration: none;
+  padding: 50px;
+}
+
+#nav a.router-link-exact-active {
+  color: #cb06ed;
 }
 </style>
