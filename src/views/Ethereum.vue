@@ -101,6 +101,9 @@ export default {
 </script>
 
 <style scoped>
+#ETH {
+  padding-top: 10rem;
+}
 .ethereum-wrapper {
   background-color: #2c3e50;
   width: 50rem;

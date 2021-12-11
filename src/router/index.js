@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Ethereum from "../views/Ethereum.vue";
+import CardList from "../views/CardList.vue";
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     name: "Ethereum",
     component: Ethereum,
     // () => import("../views/Ethereum.vue"),
+  },
+  {
+    path: "/CardList",
+    name: "CardList",
+    component: CardList,
   },
 ];
 

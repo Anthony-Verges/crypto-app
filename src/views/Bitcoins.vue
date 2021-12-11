@@ -116,6 +116,9 @@ export default {
 </script>
 
 <style scoped>
+#BTC {
+  padding-top: 10rem;
+}
 .bitcoins-wrapper {
   background-color: #2c3e50;
   width: 50rem;

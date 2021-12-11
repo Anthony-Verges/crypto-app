@@ -1,8 +1,12 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/bitcoins">Bitcoins</router-link> |
-    <router-link to="/ethereum">Ethereum</router-link>
+    <img class="img" src="./assets/btc-img.png" alt="" />
+    <div>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/bitcoins">Bitcoins</router-link> |
+      <router-link to="/ethereum">Ethereum</router-link> |
+      <router-link to="/cardList">Cryptomonnaies</router-link>
+    </div>
   </div>
   <router-view />
 </template>
@@ -18,6 +22,16 @@
 
 #nav {
   padding: 30px;
+  background-color: #19151c;
+  margin-bottom: 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: auto;
 }
 
 #nav a {
@@ -29,5 +43,9 @@
 
 #nav a.router-link-exact-active {
   color: #cb06ed;
+}
+.img {
+  width: 4rem;
+  height: 4rem;
 }
 </style>
